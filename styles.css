@@ -1,0 +1,342 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 20px;
+    color: #050507;
+    line-height: 0.1em;
+    font-family: 'Open Sans', sans-serif;
+    width: 1110px;
+    height: 672px;
+    position: relative
+}
+
+div.videono {
+    z-index: 2;
+    display: none;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 2.7%;
+    left: 14%;
+}
+
+.videono {
+    width: 804px;
+    height: 429px;
+}
+
+.pluh {
+    width: 1110px;
+    height: 672px;
+    background-image: url(images/фон1.png);
+    background-color: #5c9350;
+}
+
+.doska {
+    position: absolute;
+    left: 13.5%;
+    top: 2.5%;
+}
+
+.lichiko-v {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+}
+
+.pl-oblako {
+    position: absolute;
+    z-index: 3;
+    bottom: 18.9%;
+    left: 25.9%;
+}
+
+.inoboo {
+    position: absolute;
+    z-index: 3;
+    bottom: 27.6%;
+    left: 30.1%;
+}
+
+.listi1 {
+    position: absolute;
+    z-index: 1;
+    left: 24.7%;
+    top: 10.4%;
+}
+
+.listi2 {
+    position: absolute;
+    z-index: 1;
+    right: 24.7%;
+    top: 10.4%;
+}
+
+.kopka1 {
+    position: absolute;
+    z-index: 2;
+    top: 6.7%;
+    left: 30%;
+}
+
+.kopka2 {
+    position: absolute;
+    z-index: 2;
+    top: 6.7%;
+    right: 34%;
+}
+
+.buto:hover {
+    background-position: 0 0;
+}
+
+.buto {
+    cursor: pointer;
+    position: absolute;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #2b4251 0%, #17483f 50%, #172519 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    transition: .5s;
+    right: 18%;
+    top: 55%;
+}
+
+.cif1 {
+    position: absolute;
+    font-size: 45px;
+    top: 10%;
+    left: 25.5%;
+    z-index: 2;
+}
+
+.cif4 {
+    position: absolute;
+    font-size: 45px;
+    top: 24%;
+    left: 26.7%;
+    z-index: 2;
+}
+
+.cif7 {
+    position: absolute;
+    font-size: 45px;
+    top: 37%;
+    left: 26.7%;
+    z-index: 2;
+}
+
+.cif2 {
+    position: absolute;
+    font-size: 45px;
+    top: 10%;
+    left: 33.2%;
+    z-index: 2;
+}
+
+.cif5 {
+    position: absolute;
+    font-size: 45px;
+    top: 24%;
+    left: 33.2%;
+    z-index: 2;
+}
+
+.cif8 {
+    position: absolute;
+    font-size: 45px;
+    top: 37%;
+    left: 33.2%;
+    z-index: 2;
+}
+
+.cif3 {
+    position: absolute;
+    font-size: 45px;
+    top: 10%;
+    left: 38.3%;
+    z-index: 2;
+}
+
+.cif6 {
+    position: absolute;
+    font-size: 45px;
+    top: 24%;
+    left: 39.5%;
+    z-index: 2;
+}
+
+.cif9 {
+    position: absolute;
+    font-size: 45px;
+    top: 37%;
+    left: 39.5%;
+    z-index: 2;
+}
+
+#names001 {
+    position: absolute;
+    border: 1px solid #d1eecc;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 6.2%;
+    height: 13.2%;
+    cursor: context-menu;
+    font-size: 45px;
+    color: #050507;
+    top: 10.5%;
+    right: 38.5%;
+    z-index: 1;
+}
+
+#names002 {
+    position: absolute;
+    border: 1px solid #d1eecc;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 6.2%;
+    height: 13.2%;
+    cursor: context-menu;
+    font-size: 45px;
+    color: #050507;
+    top: 10.5%;
+    right: 32.2%;
+    z-index: 1;
+}
+
+#names003 {
+    position: absolute;
+    border: 1px solid #d1eecc;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 6.2%;
+    height: 13.2%;
+    cursor: context-menu;
+    font-size: 45px;
+    color: #050507;
+    top: 10.5%;
+    right: 25.7%;
+    z-index: 1;
+}
+
+#names004 {
+    position: absolute;
+    border: 1px solid #d1eecc;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 6.2%;
+    height: 13.2%;
+    cursor: context-menu;
+    font-size: 45px;
+    color: #050507;
+    top: 23.9%;
+    right: 38.5%;
+    z-index: 1;
+}
+
+#names005 {
+    position: absolute;
+    border: 1px solid #d1eecc;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 6.2%;
+    height: 13.2%;
+    cursor: context-menu;
+    font-size: 45px;
+    color: #050507;
+    top: 23.9%;
+    right: 32.2%;
+    z-index: 1;
+}
+
+#names006 {
+    position: absolute;
+    border: 1px solid #d1eecc;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 6.2%;
+    height: 13.2%;
+    cursor: context-menu;
+    font-size: 45px;
+    color: #050507;
+    top: 23.9%;
+    right: 25.7%;
+    z-index: 1;
+}
+
+#names007 {
+    position: absolute;
+    border: 1px solid #d1eecc;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 6.2%;
+    height: 13.2%;
+    cursor: context-menu;
+    font-size: 45px;
+    color: #050507;
+    top: 37.5%;
+    right: 38.5%;
+    z-index: 1;
+}
+
+#names008 {
+    position: absolute;
+    border: 1px solid #d1eecc;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 6.2%;
+    height: 13.2%;
+    cursor: context-menu;
+    font-size: 45px;
+    color: #050507;
+    top: 37.5%;
+    right: 32.2%;
+    z-index: 1;
+}
+
+#names009 {
+    position: absolute;
+    border: 1px solid #d1eecc;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 6.2%;
+    height: 13.2%;
+    cursor: context-menu;
+    font-size: 45px;
+    color: #050507;
+    top: 37.5%;
+    right: 25.7%;
+    z-index: 1;
+}

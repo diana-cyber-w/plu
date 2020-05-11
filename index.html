@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>plu</title>
+</head>
+
+<body>
+    <div class="pluh">
+        <img class="doska" src="images/доска1.png">
+        <img class="lichiko-v" src="images/pl11.png">
+        <img class="pl-oblako" src="images/облако 1.png">
+        <div class="inoboo">
+            <p align="center">Приведи эту матрицу к</p>
+            <p align="center">верхнетреугольному виду.</p>
+        </div>
+        <p class="cif1">24</p>
+        <p class="cif2">8</p>
+        <p class="cif3">12</p>
+        <p class="cif4">6</p>
+        <p class="cif5">5</p>
+        <p class="cif6">3</p>
+        <p class="cif7">2</p>
+        <p class="cif8">3</p>
+        <p class="cif9">6</p>
+        <img class="listi1" src="images/пустой лист.png">
+        <img class="listi2" src="images/пустой лист.png">
+        <img class="kopka1" src="images/кнопка1.png">
+        <img class="kopka2" src="images/кнопка1.png">
+        <input onkeydown="keyCode(event)" oninput="f_Date(this,2)" class="buttons001" type="text" id="names001" maxlength="2" /><input onkeydown="keyCode(event)" oninput="f_Date(this,1)" class="buttons001" type="text" id="names002" maxlength="2" /><input
+            onkeydown="keyCode(event)" oninput="f_Date(this,2)" class="buttons001" type="text" id="names003" maxlength="2" /><br />
+        <input onkeydown="keyCode(event)" oninput="f_Date(this,1)" class="buttons001" type="text" id="names004" maxlength="2" /><input onkeydown="keyCode(event)" oninput="f_Date(this,1)" class="buttons001" type="text" id="names005" maxlength="2" /><input
+            onkeydown="keyCode(event)" oninput="f_Date(this,1)" class="buttons001" type="text" id="names006" maxlength="2" /><br />
+        <input onkeydown="keyCode(event)" oninput="f_Date(this,1)" class="buttons001" type="text" id="names007" maxlength="2" /><input onkeydown="keyCode(event)" oninput="f_Date(this,1)" class="buttons001" type="text" id="names008" maxlength="2" /><input
+            onkeydown="keyCode(event)" oninput="f_Date(this,1)" class="buttons001" type="text" id="names009" maxlength="2" />
+        <input type="button" onclick="proverka()" class="buto" value="Проверить" />
+        <div class="videono">
+            <iframe class="videono"></iframe>
+        </div>
+    </div>
+    <script>
+        function f_Date(el, n) {
+            el.value = el.value.replace(/[^0-9-]/);
+            if (el.value.length > n) el.value = el.value.substr(n);
+            if (el.value.length == n) el.nextSibling.focus();
+        }
+
+        function proverka() {
+            var mismatchSound = new Audio('Audio/6_sto-k-odnomu-ne-pra_ilnyy-ot_et (mp3cut.net).mp3');
+            var matchSound = new Audio('Audio/line_open (mp3cut.net).mp3');
+            if (document.getElementById("names001").value == "24" && document.getElementById("names002").value == "8" && document.getElementById("names003").value == "12" && document.getElementById("names004").value == "0" && document.getElementById("names005").value == "3" && document.getElementById("names006").value == "0" && document.getElementById("names007").value == "0" && document.getElementById("names008").value == "0" && document.getElementById("names009").value == "5") {
+                $('div.videono').css('display', 'block');
+                $('iframe.videono').prop('src', 'Audio/InShot_20200510_202845330.mp4');
+            } else {
+                $('div.videono').css('display', 'block');
+                $('iframe.videono').prop('src', 'Audio/IMG_3810.MP4');
+            }
+        }
+    </script>
+</body>
+
+</html>
